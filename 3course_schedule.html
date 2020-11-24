@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>C Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="xb">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pastelpink w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-mutered w3-hover-greymaroon">HOME</a>
+    <a href="3course_schedule.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-mutered w3-text-magenta">COURSE SCHEDULE</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button w3-hover-mutered w3-text-magenta" title="More">TOPICS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-greymaroon">
+        <a href="4assignments.html" class="w3-bar-item w3-button">Weekly Assignments</a>
+        <a href="5electronicsproduction.html" class="w3-bar-item w3-button">Electronics Production</a>
+        <a href="6electronicsdesign.html" class="w3-bar-item w3-button">Electronics Design</a>
+        <a href="7embeddedprogramming.html" class="w3-bar-item w3-button">Embedded Programming</a>
+        <a href="82dcomputercontrolledmachining.html" class="w3-bar-item w3-button">2D Computer Controlled Machining</a>
+        <a href="93dmachining.html" class="w3-bar-item w3-button">3D Machining</a>
+        <a href="10molding&casting.html" class="w3-bar-item w3-button">Molding & Casting</a>
+        <a href="11interface&applicationsprogramming.html" class="w3-bar-item w3-button">Interface & Applications Programming</a>
+        <a href="12introductiontoiot.html" class="w3-bar-item w3-button">Introduction to IoT</a>
+      </div>
+    </div>
+    <a href="2finalproject.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-mutered w3-text-magenta">FINAL PROJECT</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-mutered w3-text-magenta">CONTACT</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="3course_schedule.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COURSE SCHEDULE</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOPICS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- The Yellow Section -->
+<div class="w3-mutered">
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="courseschedule">
+  <h1 class="w3-center" style="font-size: 45px"><b>COURSE SCHEDULE</b></h1>
+  <p class="w3-opacity"><i>  These are the things that will be covered each week.
+</i></p>
+<br>
+<br><center>
+<table class="table table-striped w3-text-brightpurple w3-pastelpink">
+  <thead>
+    <tr>
+      <th style="text-align: center">Week</th>
+      <th style="text-align: center">Date</th>
+      <th>Topic</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">01</td>
+      <td style="text-align: center">19/10/20</td>
+      <td>Introduction, Review of Digital Fabrication Skills</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">02</td>
+      <td style="text-align: center">26/10/20</td>
+      <td>Electronics Production</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">03</td>
+      <td style="text-align: center">02/11/20</td>
+      <td>Electronics Design</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">04</td>
+      <td style="text-align: center">09/11/20</td>
+      <td>Embedded Programming</td>
+      <td>Deepavali 14 Nov</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">05</td>
+      <td style="text-align: center">16/11/20</td>
+      <td>2D Computer Controlled Machining</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">06</td>
+      <td style="text-align: center">23/11/20</td>
+      <td>2D Routing (hands-on)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">07</td>
+      <td style="text-align: center">30/11/20</td>
+      <td>3D Machining, Molding & Casting</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">08</td>
+      <td style="text-align: center">07/12/20</td>
+      <td>Molding & Casting (hands-on)</td>
+      <td>MST week</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">09</td>
+      <td style="text-align: center">14/12/20</td>
+      <td>Mid-term Break</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">21/12/20</td>
+      <td>Mid-term Break</td>
+      <td>Christmas 25 Dec</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">28/12/20</td>
+      <td>Mid-term Break</td>
+      <td>New Year’s Day 1 Jan</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">12</td>
+      <td style="text-align: center">04/01/21</td>
+      <td>Interface & Applications Programming</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">13</td>
+      <td style="text-align: center">11/01/21</td>
+      <td>Interface & Applications Programming</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">14</td>
+      <td style="text-align: center">18/01/21</td>
+      <td>Interface & Applications Programming</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">15</td>
+      <td style="text-align: center">25/01/21</td>
+      <td>Introduction to IoT</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16</td>
+      <td style="text-align: center">01/02/21</td>
+      <td>Module Project</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">17</td>
+      <td style="text-align: center">08/02/21</td>
+      <td>Module Project</td>
+      <td>Chinese New Year 12 & 13 Feb</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">18</td>
+      <td style="text-align: center">15/02/21</td>
+      <td>Presentation</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</center>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <a href="https://www.instagram.com/wxlfie._/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+</footer>
+
+
+</body>
+</html>
