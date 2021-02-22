@@ -64,8 +64,8 @@ body {font-family: "Lato", sans-serif}
       <li class="w3-padding"><a href="#week2">Week 2</a></li>
       <li class="w3-padding"><a href="#week3">Week 3</a></li>
       <li class="w3-padding"><a href="#week4">Week 4</a></li>
-      <li class="w3-padding"><a href="#week5">Week 5</a></li>
-      <li class="w3-padding"><a href="#week6">Week 6</a></li>
+      <li class="w3-padding"><a href="#week5&6">Week 5 & 6</a></li>
+      <li class="w3-padding"><a href="#week7&8">Week 7 & 8</a></li>
   </ul>
 </div></div>
 
@@ -79,7 +79,10 @@ body {font-family: "Lato", sans-serif}
 <br>
     <p class="w3-text-autumnorange w3-justify">
       <ol class="w3-text-autumnorange">
-        <li>Create a github repository for this module</li>
+        <li>Create a github repository for this module</li><br>
+        <img src="Images/repository.png" width="100%">
+        <center><b><a href="https://sp-claire.github.io/E1000/index-assignments.html#week3">Link to steps</a></b></center>
+<br>
         <li>Create a basic website for the module. Your website must meet the following requirements:
           <ul>
             <li>Hosted on Github</li>
@@ -87,7 +90,8 @@ body {font-family: "Lato", sans-serif}
             <li>Contains an about page</li>
             <li>Contains separate pages with links for module topics</li>
           </ul>
-        </li>
+        </li><br>
+        <p>This website is created with these requirements in mind.</p>
       </ol>
     </p>
     
@@ -96,11 +100,43 @@ body {font-family: "Lato", sans-serif}
 
 <!-- The Purple Section -->
 <div class="w3-pastelpurple w3-text-firebrick">
-<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="week2">
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="week2">
   <h2 class="w3-wide w3-center">WEEK 2</h2>
     <p class="w3-opacity w3-center"><i>PCB Part 1</i></p><br>
     <h3 class="w3-wide w3-center">Assignment #1</h3>
-    <p class="w3-text-firebrick w3-justify"></p>
+<br>
+    <p class="w3-text-firebrick w3-justify">
+      <ol class="w3-text-firebrick">
+        <li>Make an in circuit programmer by milling and stuffing the PCB</li>
+        <li>Test it</li>
+      </ol>
+<br>
+      <ol class="w3-text-firebrick">
+        <li><b>Step 1:</b> Using the given traces and outline, input it into <a href="https://mods.cba.mit.edu/"><b>mods</b></a> to generate the gcode for milling</li><br>
+          <img src="Images/fts_traces.png" width="50%"><p>&nbsp</p><img src="Images/fts_outline.png" width="50%">
+          <br><br>
+          <img src="Images/mods.png" width="80%">
+          <br><br>
+        <br>
+        <li><b>Step 2:</b> Input the recommended settings into mods to generate the right gcode. Generate gcode.nbm</li><br>
+          <img src="Images/mods_settings.png" width="80%">
+          <br><br>
+        <br>
+        <li><b>Step 3:</b> After making sure settings are right, save the gcode</li><br>
+          <img src="Images/gcode1.png" width="80%">
+          <br><br>
+        <br>
+        <li><b>Step 4: [LAB]</b> Using the UCCNC Software, import the gcode. After making sure everything is set (checking the coordinates and center using the sensor, cutter settings and type used), we can begin cutting</li><br>
+          <img src="Images/pcb1.jpeg" width="90%">
+          <p class="w3-justify w3-text-firebrick">Sand the sides and top till smooth (take extra care with the top).<br>Peel the unneccessary copper off.</p>
+          <img src="Images/pcb2.jpeg" width="90%">
+          <br><br>
+        <br>
+        <li><b>Step 5: [LAB]</b> I then soldered all the parts on. Here is the finished product!</li><br>
+          <img src="Images/pcb3.jpeg" width="90%">
+          <br><br>
+      <br>
+    </p>
 
 </div>
 </div>
@@ -112,7 +148,47 @@ body {font-family: "Lato", sans-serif}
     <h2 class="w3-wide w3-center w3-text-autumnorange">WEEK 3</h2>
     <p class="w3-opacity w3-center w3-text-autumnorange"><i>PCB Part 2</i></p><br>
     <h3 class="w3-wide w3-center w3-text-autumnorange">Assignment #1</h3>
-    <p class="w3-text-autumnorange w3-justify"></p>
+    <p class="w3-text-autumnorange w3-justify">
+      <ol class="w3-text-autumnorange">
+        <li>Redraw an echo hello-world board
+          <ul>
+            <li>add (at least) a button and an LED (with current limiting resistor)</li>
+            <li>check the design rules (ERC, DRC)</li>
+            <li>make it</li>
+            <li>test it</li>
+          </ul>
+        </li>
+      </ol>
+<br>
+      <ol class="w3-text-autumnorange">
+        <li><b>Step 1:</b> Make a schematic board in Eagle.</li><br>
+          <img src="Images/atinycircuit.png" width="100%">
+        <br><br><br>
+        <li><b>Step 2:</b> Then I make the board in Eagle using Route Airwire. It was a trial and error to fit everything in the board nicely.</li>
+          <img src="Images/atiny1.png" width="50%"><img src="Images/atiny2.png" width="50%">
+        <br><br><br>
+        <p class="w3-text-autumnorange w3-center">Final Design</p>
+          <center><img src="Images/atiny3.png" width="90%"></center>
+        <br><br>
+        <li><b>Step 3:</b> Setting the clearance and generating the gcode</li><br>
+          <center><img src="Images/eagleclearing.png" width="80%"></center>
+        <br><br><br>
+        <p class="w3-text-autumnorange w3-center">GCode</p>
+          <center><img src="Images/gcode2.png" width="70%"></center>
+        <br><br><br>
+        <li><b>Step 4: [LAB]</b> Input into stepcraft and do the necessary settings and coordinates.</li><br>
+          <img src="Images/atinystepcraft.jpeg" width="100%">
+        <br><br><br>
+        <li><b>Step 5: [LAB]</b> Start cutting the traces and outline.</li><br>
+          <img src="Images/atinyboard.jpeg" width="100%">
+          <img src="Images/atinyboard2.jpeg" width="100%">
+          <img src="Images/atinyboard3.jpeg" width="100%">
+          <img src="Images/atinyboard4.jpeg" width="100%">
+        <br><br><br>
+        <li><b>Step 6: [LAB]</b> Following the previous PCB making, sand it and then solder the parts together.</li><br>
+          <img src="Images/atinyboardsolder.jpeg" width="100%">
+          <img src="Images/atinyboardfinish.jpeg" width="100%">
+    </p>
     
 </div></div>
 
@@ -121,31 +197,105 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-pastelpurple w3-text-firebrick">
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="week4">
   <h2 class="w3-wide w3-center">WEEK 4</h2>
-    <p class="w3-opacity w3-center"><i>Eagle</i></p><br>
+    <p class="w3-opacity w3-center"><i>Microcontroller</i></p><br>
     <h3 class="w3-wide w3-center">Assignment #1</h3>
-    <p class="w3-text-firebrick w3-justify"></p>
+    <p class="w3-text-firebrick w3-justify">
+      <ol class="w3-text-autumnorange w3-justify">
+        <li>Individual assignment
+          <ul>
+            <li>read a microcontroller data sheet</li>
+            <li>program your board to do something,</li>
+            <li>with as many different programming languages and programming environments as possible</li>
+          </ul>
+        </li>
+      </ol>
+<br>
+      <ol class="w3-text-autumnorange w3-justify">
+        <li><b>Step 1:</b> </li><br>
+          <img src="Images/.png" width="50%"><p>&nbsp</p><img src="Images/.png" width="50%">
+          <br><br>
+          <img src="Images/.png" width="80%">
+          <br><br>
+        <br>
+    </p>
 
 </div>
 </div>
 
 <!-- The Yellow Section -->
-<div class="w3-pastelyellow" id="week5">
+<div class="w3-pastelyellow" id="week5&6">
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-    <h2 class="w3-wide w3-center w3-text-autumnorange">WEEK 5</h2>
-    <p class="w3-opacity w3-center w3-text-autumnorange"><i></i></p><br>
+    <h2 class="w3-wide w3-center w3-text-autumnorange">WEEK 5 & 6</h2>
+    <p class="w3-opacity w3-center w3-text-autumnorange"><i>Eagle</i></p><br>
     <h3 class="w3-wide w3-center w3-text-autumnorange">Assignment #1</h3>
-    <p class="w3-text-autumnorange w3-justify"></p>
+    <p class="w3-text-autumnorange w3-justify">
+      <ol class="w3-text-autumnorange">
+        <li>Individual assignment
+          <ul>
+            <li>make (design+mill+assemble) something big</li>
+          </ul>
+        </li>
+      </ol>
+<br>
+      <ol class="w3-text-autumnorange">
+        <li><b>Step 1:</b> So I decided to make a flatpack table top cabinet.<br><a href="https://www.instructables.com/Flat-Pack-Bookshelf-CNC-Router/"><b><i>Reference</i></b></a></li><br>
+          <center><img src="https://content.instructables.com/ORIG/F4Q/UL6X/IEV868LL/F4QUL6XIEV868LL.png?auto=webp&frame=1&fit=bounds&md=e73f6db9ad3a5411f8bcce4bcb97ebcf" width="70%">
+          <br><br><br>
+          <li class="w3-justify"><b>Step 2:</b> I followed the instructions from the reference link and changed up the different measurements to fit what I had in mind.</li>
+          <br>
+          <img src="Images/cabinetparameters.png" width="80%">
+          <br><br>
+          <img src="Images/cabinet.png" width="80%">
+          <br><br><br>
+          <li class="w3-justify"><b>Step 2:</b> Then we prepare the model for cutting.</li>
+          <br>
+          <img src="Images/cabinet2.png" width="80%">
+          <br><br>
+          <img src="Images/cabinet3.png" width="80%">
+          <br><br>
+          <img src="Images/cabinet4.png" width="80%">
+          <br><br>
+          <p class="w3-center w3-text-autumnorange">Files for cutting</p>
+          <img src="Images/cabinet5.png" width="80%">
+          <br><br>
+          </center>
+          
+        <br>
+    </p>
     
 </div></div>
 
 
 <!-- The Purple Section -->
 <div class="w3-pastelpurple w3-text-firebrick">
-<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="week6">
-  <h2 class="w3-wide w3-center">WEEK 6</h2>
-    <p class="w3-opacity w3-center"><i></i></p><br>
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="week7&8">
+  <h2 class="w3-wide w3-center">WEEK 7 & 8</h2>
+    <p class="w3-opacity w3-center"><i>Molding & Casting</i></p><br>
     <h3 class="w3-wide w3-center">Assignment #1</h3>
-    <p class="w3-text-firebrick w3-justify"></p>
+    <p class="w3-text-firebrick w3-justify">
+      <ol class="w3-text-firebrick w3-justify">
+        <li>Make a mold & cast it
+          <ul>
+            <li>Must include 3D component in the mold</li>
+          </ul>
+        </li>
+      </ol>
+<br>
+      <li class="w3-justify"><b>Step 1:</b> I went with a simple geometric shape, a hexagon.</li>
+      <br>
+      <img src="Images/mold.png" width="80%">
+      <br><br>
+      <img src="Images/mold2.png" width="80%">
+      <br><br>
+      <p class="w3-text-firebrick">Preparing toolpath and files for cutting</p>
+      <img src="Images/mold3.png" width="80%">
+      <br><br>
+      <img src="Images/mold4.png" width="80%">
+      <br><br>
+       <p class="w3-text-firebrick">Files for cutting</p>
+      <img src="Images/mold5.png" width="80%">
+      <br><br>
+    </p>
 
 </div>
 </div>
